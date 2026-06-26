@@ -1,0 +1,105 @@
+@font-face {
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+    font-family: Roboto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.headercontainer{
+    font-family: Roboto;
+    font-size: 50px;
+    padding: 5px;
+    display: flex;
+    background-color: hsl(0, 0%, 50%);
+    height: 75px; /*the height of the box behind the text*/
+    justify-content: center; /*this allows the text to be centered horizontally*/
+    align-items: center; /*this allows the text to be centered vertically*/
+}
+
+.candidateinfo{ /*the main box that users input basic candidate info. change elements of the orange background here */
+    font-family: Roboto;
+    background-color:orange;
+    height: 82px;   
+}
+
+.candidatename{
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 25%;
+    float: left;
+    text-align: center;   
+}
+
+.State{
+    border: 1px solid;
+    padding: 21px;
+    height: auto;
+    width: 25%;
+    float: left;
+    text-align: center;  
+}
+
+
+.Office{
+    border: 1px solid;
+    padding: 21px;
+    height: auto;
+    width: 25%;
+    float: left;
+    text-align: center;  
+}
+
+.Jurisdiction{
+    border: 1px solid;
+    padding: 21px;
+    height: auto;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.candidatepro{
+    font-family: Roboto;
+    background-color:red;
+    height: 62px; 
+}
+
+.candidatepronounce{
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    float: left;
+    text-align: center; 
+}
+
+.date{
+    font-family: Roboto;
+    background-color:lightblue;
+    height: 63px;
+}
+
+.primary{
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center; 
+}
+
+.general{
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center; 
+}

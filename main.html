@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Report Creator</title>
+    <link rel="icon" type="image/png" href="/images/pv_favicon.png"> <!--favicon is PV logo, may want to change to higher resolution image, or custom research image :3-->
+    <link rel="stylesheet" href="mainstyle.css"> <!--a link to the style sheet for main candidate report-->
+</head>
+
+<body>
+    <div class="headercontainer">
+        <header>Create a Basic Report</header>  <!--main header of the report creator-->
+    </div>
+
+    <!--create an input so the user can type in the candidate name, a dropdown for candidate office, and dropdown for candidate jurisdiction-->
+    <!-- will need to link it so the stored value maybe goes to a google sheet which then can be used to rewrite a google document-->
+
+    <div class="candidateinfo"> <!--the main div will have the class of candidate info. this will be so there can be a solid background color-->
+        <div class="candidatename"> <!--creating three extra div classes so that these options can be aligned in the same row-->
+        <label for="candidatename" >Please enter the candidate's name</label><br>
+        <input type="text" id="candidatename" placeholder="Angie Nixon" required>
+        </div>
+
+        <div class="State">
+        <label for="State" >What state are they running in?</label> <br>
+        <select id="State"></select>
+        </div>  
+
+        <div class="Office">
+        <label for="Office">What office are they seeking?</label><br>
+        <select id="Office"></select>
+        </div>
+
+        <div class="Jurisdiction">
+        <label for="Jurisdiction" >Please choose their jurisdiction</label> <br>
+        <select id="Jurisdiction"></select>
+        </div>             
+
+        <script src="dropdown.js"></script>
+    </div> <!--end of candidateinfo row-->
+
+
+    <!--create an input so the user can type in how to pronounce the candidate name-->
+    <!--will need to link the input so stored value maybe goes to a google sheet which then can be used to rewrite a google document-->
+    <div class="candidatepro"> <!--the main div-->
+        <div class="candidatepronounce"> <!--creating three extra div classes so that these options can be aligned in the same row-->
+        <label for="candidatepronounce" >How do you pronounce the candidate's name?</label>
+        <input type="text" id="candidatepronounce" placeholder="ANN-jee NICK-son" required>
+        </div>
+    </div>
+
+    <!--create two inputs so the user can enter a primary date and a general election date-->
+    <div class="date"> <!--main date div-->
+        <div class="primary">
+            <label for="primary">Enter the candidate's primary election date</label>
+            <input type="date" id="primary">
+        </div>
+         <div class="general">
+            <label for="general">Enter the candidate's general election date</label>
+            <input type="date" id="primary">
+        </div>
+    </div>
+
+</body>
+</html>
