@@ -22,10 +22,34 @@ body{
     align-items: center; /*this allows the text to be centered vertically*/
 }
 
+.userinfo{
+    font-family: Roboto;
+    background-color:yellowgreen;
+    height: 62px;   
+} 
+
+.usersname{
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center; 
+}
+
+.startdate{
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center; 
+}
+
 .candidateinfo{ /*the main box that users input basic candidate info. change elements of the orange background here */
     font-family: Roboto;
     background-color:orange;
-    height: 82px;   
+    height: 81px;   
 }
 
 .candidatename{
@@ -39,7 +63,7 @@ body{
 
 .State{
     border: 1px solid;
-    padding: 21px;
+    padding: 21.5px;
     height: auto;
     width: 25%;
     float: left;
@@ -49,7 +73,7 @@ body{
 
 .Office{
     border: 1px solid;
-    padding: 21px;
+    padding: 21.5px;
     height: auto;
     width: 25%;
     float: left;
@@ -58,7 +82,7 @@ body{
 
 .Jurisdiction{
     border: 1px solid;
-    padding: 21px;
+    padding: 21.5px;
     height: auto;
     width: 25%;
     float: left;
@@ -68,7 +92,7 @@ body{
 .candidatepro{
     font-family: Roboto;
     background-color:red;
-    height: 62px; 
+    height: 63px; 
 }
 
 .candidatepronounce{
@@ -83,7 +107,7 @@ body{
 .date{
     font-family: Roboto;
     background-color:lightblue;
-    height: 63px;
+    height: 62px;
 }
 
 .primary{
@@ -103,3 +127,92 @@ body{
     float: left;
     text-align: center; 
 }
+
+#submit{
+    text-align: center;
+}
+
+#submitbutton{
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submitbutton:hover{
+    background-color: hsl(0, 0%, 20%);
+}
+
+.endorsements{
+    font-family: Roboto;
+    border: 1px solid;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    float: left;
+    text-align: center; 
+}
+
+.candissues1{
+    font-family: Roboto;
+    background-color: aquamarine;
+    border: 1px solid;
+    height: 82px;
+}
+
+.candissues2{
+    font-family: Roboto;
+    background-color: aquamarine;
+    border: 1px solid;
+    height: 82px;
+}
+
+.issue1{
+    padding: 20px;
+    height: auto;
+    border: 1px solid;
+    width: 50%;
+    float: left;
+    text-align: center; 
+    grid-template-columns: 1fr 3fr;
+}
+.issue2{
+    padding: 20px;
+    height: auto;
+    border: 1px solid;
+    width: 50%;
+    float: left;
+    text-align: center; 
+}
+.issue3{
+    padding: 20px;
+    height: auto;
+    border: 1px solid;
+    width: 33.33%;
+    float: left;
+    text-align: center; 
+}
+.issue4{
+    padding: 20px;
+    height: auto;
+    border: 1px solid;
+    width: 33.33%;
+    float: left;
+    text-align: center; 
+}
+.issue5{
+    padding: 20px;
+    height: auto;
+    border: 1px solid;
+    width: 33.33%;
+    float: left;
+    text-align: center; 
+}
+
+

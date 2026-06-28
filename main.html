@@ -9,32 +9,42 @@
 </head>
 
 <body>
+    <form method="post" action="" name="contact-form">
     <div class="headercontainer">
-        <header>Create a Basic Report</header>  <!--main header of the report creator-->
+        <header>Progressive Victory Candidate Report Generator</header>  <!--main header of the report creator-->
     </div>
 
-    <!--create an input so the user can type in the candidate name, a dropdown for candidate office, and dropdown for candidate jurisdiction-->
-    <!-- will need to link it so the stored value maybe goes to a google sheet which then can be used to rewrite a google document-->
+    <div class="userinfo"> <!--beginning of user info input-->
+        <div class="usersname">
+            <label for="usersname">Please enter your preferred name</label>
+            <input type="text" name="usersname" id="usersname" placeholder="Preferred Name" required>
+        </div>        
+        <div class="startdate">
+            <label for="startdate">Enter the date your started this report</label>
+            <input type="date" name= "startdate" id="primary" required> <!--user will input the candidate's primary election date. the 'name' label is to link to the google doc-->
+        </div>
 
-    <div class="candidateinfo"> <!--the main div will have the class of candidate info. this will be so there can be a solid background color-->
+    </div>
+    <!--create an input so the user can type in the candidate name, a dropdown for candidate office, and dropdown for candidate jurisdiction-->
+       <div class="candidateinfo"> <!--the main div will have the class of candidate info. this will be so there can be a solid background color-->
         <div class="candidatename"> <!--creating three extra div classes so that these options can be aligned in the same row-->
-        <label for="candidatename" >Please enter the candidate's name</label><br>
-        <input type="text" id="candidatename" placeholder="Angie Nixon" required>
+        <label for="candidatename" >Please enter the candidate's name</label><br> 
+        <input type="text" name="candidatename" id="candidatename" placeholder="Angie Nixon" required> <!--user will enter the candidate's name. the 'name' label links the input to the google sheet-->
         </div>
 
         <div class="State">
-        <label for="State" >What state are they running in?</label> <br>
-        <select id="State"></select>
+        <label for="State" >What state are they running in?</label> <br> 
+        <select id="State" name="state" required></select> <!--user will input the candidate's state from a dropdown. the 'name' label links the input to the google sheet-->
         </div>  
 
         <div class="Office">
         <label for="Office">What office are they seeking?</label><br>
-        <select id="Office"></select>
+        <select id="Office" name="office" required></select> <!--user will input what office the candidate is seeking from dropdown. the 'name' label links the input to the google sheet-->
         </div>
 
         <div class="Jurisdiction">
         <label for="Jurisdiction" >Please choose their jurisdiction</label> <br>
-        <select id="Jurisdiction"></select>
+        <select id="Jurisdiction" name="jurisdiction" required></select> <!--user will input the candidate's jurisdiction from dropdown. the 'name' label links the input to the google sheet-->
         </div>             
 
         <script src="dropdown.js"></script>
@@ -42,11 +52,10 @@
 
 
     <!--create an input so the user can type in how to pronounce the candidate name-->
-    <!--will need to link the input so stored value maybe goes to a google sheet which then can be used to rewrite a google document-->
-    <div class="candidatepro"> <!--the main div-->
-        <div class="candidatepronounce"> <!--creating three extra div classes so that these options can be aligned in the same row-->
+    <div class="candidatepro"> <!--the main div for candidatepro-->
+        <div class="candidatepronounce">
         <label for="candidatepronounce" >How do you pronounce the candidate's name?</label>
-        <input type="text" id="candidatepronounce" placeholder="ANN-jee NICK-son" required>
+        <input type="text" name="candidatepronounce" id="candidatepronounce" placeholder="ANN-jee NICK-son" required> <!--user will input how to pronounce the candidates name. the 'name' label is to link to the google sheet-->
         </div>
     </div>
 
@@ -54,13 +63,67 @@
     <div class="date"> <!--main date div-->
         <div class="primary">
             <label for="primary">Enter the candidate's primary election date</label>
-            <input type="date" id="primary">
+            <input type="date" name= "primarydate" id="primary" required> <!--user will input the candidate's primary election date. the 'name' label is to link to the google doc-->
         </div>
          <div class="general">
             <label for="general">Enter the candidate's general election date</label>
-            <input type="date" id="primary">
+            <input type="date" name="generaldate" id="primary" required> <!--user will input the candidate's general election date. the 'name' label is to link to the google doc-->
         </div>
     </div>
+
+    <div class="candissues1">
+        <div class="issue1"> <!--creating extra div classes so that these options can be aligned in the same row-->
+        <label for="issue1" >Enter the candidates first top issue</label><br> 
+        <input type="text" name="issue1" id="issue1" size="55" placeholder="Healthcare: Passing Medicare for All and eliminating medical debt" required> <!--user will enter the candidate's first top issue . the 'name' label links the input to the google sheet-->
+        </div>
+
+         <div class="issue2"> 
+        <label for="issue2" >Enter the candidates second top issue</label><br> 
+        <input type="text" name="issue2" id="issue2" size="55" placeholder="Education: Passing free tuition for public colleges and universities" required> <!--user will enter the candidate's second top issue . the 'name' label links the input to the google sheet-->
+        </div>
+
+
+    </div>
+
+
+    <div class="candissues2">
+         <div class="issue3"> 
+        <label for="issue3" >Enter the candidates third top issue</label><br> 
+        <input type="text" name="issue3" id="issue3" size="42" placeholder="Corruption: Repealing the Citizens United decision" required> <!--user will enter the candidate's third top issue . the 'name' label links the input to the google sheet-->
+        </div>
+
+         <div class="issue4"> 
+        <label for="issue4" >Enter the candidates fourth top issue</label><br> 
+        <input  type="text" name="issue4" id="issue4" size="60" placeholder="Gaza: End the genocide and create a one state solution with equal rights" required> <!--user will enter the candidate's fourth top issue . the 'name' label links the input to the google sheet-->
+        </div>
+
+         <div class="issue5"> 
+        <label for="issue5" >Enter the candidates fifth top issue</label><br> 
+        <input type="text" name="issue5" id="issue5" size="70" placeholder="LGBTQ+ Rights: Enshrine rights into law and make sure queer people aren't discriminated against" required> <!--user will enter the candidate's fifth top issue . the 'name' label links the input to the google sheet-->
+        </div>
+    </div>
+
+
+
+    <!-- create a text box area so users can input candidate endorsements !!!NOTE - work in progress whole thing broke when i tried to add this lol
+     <div class="endorsements">
+        <label id="endorsements">Enter any endorsements the candidate has received, separate by comma.</label><br>
+        <input type="text" id="endorsements" name ="endorsements"></textarea>
+     </div>
+     -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="submit"> <!--putting the main 'submit' button into a div so that it can be centered. to change color and size use the 'submitbutton' id-->
+        <input type="submit" value="Submit" id="submitbutton">
+    </div>
+    <script src="sheet-form.js"></script>
+
+    </form>
 
 </body>
 </html>
